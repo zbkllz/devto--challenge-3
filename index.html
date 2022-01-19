@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <!-- coluna da esquerda -->
     <div class="task-manager">
       <div class="left-bar">
-        <div class="upper-partner">
+        <div class="upper-part">
           <div class="actions">
             <div class="circle"></div>
             <div class="circle-2"></div>
@@ -34,7 +35,7 @@
           <li class="item">
             <img
               class="feather feather-calendar"
-              src="svg/calendar.svg"
+              src="svg/calender.svg"
               alt=""
             />
             <span>Upcoming</span>
@@ -52,6 +53,7 @@
             <span>Trash</span>
           </li>
         </ul>
+        <!-- 2 -->
         <ul class="category-list">
           <li class="item">
             <img class="feather feather-users" src="svg/users.svg" alt="" />
@@ -76,7 +78,120 @@
         </ul>
       </div>
     </div>
-
+    <!-- page content -->
+    <div class="page-content">
+      <div class="header">Today Tasks</div>
+      <!-- content categories -->
+      <div class="content-categories">
+        <div class="label-wrapper">
+          <input class="nav-item" name="nav" type="radio" id="opt-1" />
+          <label class="category" for="opt-1">All</label>
+        </div>
+        <div class="label-wrapper">
+          <input class="nav-item" name="nav" type="radio" id="opt-2" />
+          <label class="category" for="opt-1">Important</label>
+        </div>
+        <div class="label-wrapper">
+          <input class="nav-item" name="nav" type="radio" id="opt-3" />
+          <label class="category" for="opt-1">Notes</label>
+        </div>
+        <div class="label-wrapper">
+          <input class="nav-item" name="nav" type="radio" id="opt-4" />
+          <label class="category" for="opt-1">Links</label>
+        </div>
+      </div>
+      <!--  -->
+      <!-- task wrapper -->
+      <div class="task-wrapper">
+        <!-- 1 -->
+        <div class="task">
+          <input
+            class="task-item"
+            name="task"
+            type="checkbox"
+            id="item-1"
+            checked
+          />
+          <label for="item-1">
+            <span class="label-text"> Dashboard Design Implementation </span>
+          </label>
+          <span class="tag approved">Approved</span>
+        </div>
+        <!-- 2 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-2" />
+          <label for="item-2">
+            <span class="label-text"> Create a userflow </span>
+          </label>
+          <span class="tag progress">In Progress</span>
+        </div>
+        <!-- 3 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-3" />
+          <label for="item-3">
+            <span class="label-text"> Application Implementation </span>
+          </label>
+          <span class="tag review">In Review</span>
+        </div>
+        <!-- 4 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-4" />
+          <label for="item-4">
+            <span class="label-text"> Create a Dashboard Design </span>
+          </label>
+          <span class="tag progress">In Progress</span>
+        </div>
+        <!-- 5 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-5" />
+          <label for="item-5">
+            <span class="label-text"> Create a Web Application Design </span>
+          </label>
+          <span class="tag approved">Approved</span>
+        </div>
+        <!-- 6 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-6" />
+          <label for="item-6">
+            <span class="label-text"> Interactive Design </span>
+          </label>
+          <span class="tag-approved">In Review</span>
+        </div>
+        <!-- upcoming tasks -->
+        <div class="header upcoming">Upcoming Tasks</div>
+        <!-- 1 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-7" />
+          <label for="item-7">
+            <span class="label-text"> Dashboard Design Implementation </span>
+          </label>
+          <span class="tag waiting">Waiting</span>
+        </div>
+        <!-- 2 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-8" />
+          <label for="item-8">
+            <span class="label-text"> Create a userflow </span>
+          </label>
+          <span class="tag waiting">Waiting</span>
+        </div>
+        <!-- 3 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-9" />
+          <label for="item-9">
+            <span class="label-text"> Application Implementation</span>
+          </label>
+          <span class="tag waiting">Waiting</span>
+        </div>
+        <!-- 4 -->
+        <div class="task">
+          <input class="task-item" name="task" type="checkbox" id="item-10" />
+          <label for="item-10">
+            <span class="label-text">Create a Dashboard Design </span>
+          </label>
+          <span class="tag waiting">Waiting</span>
+        </div>
+      </div>
     </div>
   </body>
   <script src="sc.js"></script>
