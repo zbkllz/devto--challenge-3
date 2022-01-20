@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- coluna da esquerda -->
-    <div class="task-manager">
-      <div class="left-bar">
-        <div class="upper-part">
-          <div class="actions">
-            <div class="circle"></div>
-            <div class="circle-2"></div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- coluna da esquerda -->
+  <div class="task-manager">
+    <div class="left-bar">
+      <div class="upper-part">
+        <div class="actions">
+          <div class="circle"></div>
+          <div class="circle-2"></div>
         </div>
       </div>
-
       <!-- coluna de conteúdo da esquerda -->
       <div class="left-content">
         <ul class="action-list">
@@ -33,11 +32,7 @@
             <span>Today</span>
           </li>
           <li class="item">
-            <img
-              class="feather feather-calendar"
-              src="svg/calender.svg"
-              alt=""
-            />
+            <img class="feather feather-calendar" src="svg/calender.svg" alt="" />
             <span>Upcoming</span>
           </li>
           <li class="item">
@@ -64,11 +59,7 @@
             <span>Vacation</span>
           </li>
           <li class="item">
-            <img
-              class="feather feather-trending-up"
-              src="svg/trending.svg"
-              alt=""
-            />
+            <img class="feather feather-trending-up" src="svg/trending.svg" alt="" />
             <span>Festival</span>
           </li>
           <li class="item">
@@ -77,14 +68,16 @@
           </li>
         </ul>
       </div>
+      <!-- fim coluna da esquerda -->
     </div>
+    <!-- fim coluna de conteúdo da esquerda -->
     <!-- page content -->
     <div class="page-content">
       <div class="header">Today Tasks</div>
       <!-- content categories -->
       <div class="content-categories">
         <div class="label-wrapper">
-          <input class="nav-item" name="nav" type="radio" id="opt-1" />
+          <input class="nav-item" name="nav" type="radio" id="opt-1" checked />
           <label class="category" for="opt-1">All</label>
         </div>
         <div class="label-wrapper">
@@ -102,16 +95,10 @@
       </div>
       <!--  -->
       <!-- task wrapper -->
-      <div class="task-wrapper">
+      <div class="tasks-wrapper">
         <!-- 1 -->
         <div class="task">
-          <input
-            class="task-item"
-            name="task"
-            type="checkbox"
-            id="item-1"
-            checked
-          />
+          <input class="task-item" name="task" type="checkbox" id="item-1" checked />
           <label for="item-1">
             <span class="label-text"> Dashboard Design Implementation </span>
           </label>
@@ -155,7 +142,7 @@
           <label for="item-6">
             <span class="label-text"> Interactive Design </span>
           </label>
-          <span class="tag-approved">In Review</span>
+          <span class="tag review">In Review</span>
         </div>
         <!-- upcoming tasks -->
         <div class="header upcoming">Upcoming Tasks</div>
@@ -193,6 +180,7 @@
         </div>
       </div>
     </div>
-  </body>
-  <script src="sc.js"></script>
+  </div>
+</body>
+<script src="sc.js"></script>
 </html>
